@@ -1,0 +1,18 @@
+// you need to understand css layers for this files
+// this file registers all the required styles into the program in the correct order (importance)
+
+@layer kc {
+  // your custom css
+  @import "style";
+}
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utils {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+@layer tailwind-base, kc, tailwind-utils;

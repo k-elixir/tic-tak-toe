@@ -1,0 +1,11 @@
+// do you know what does this class do?
+// @apply ?
+// &:???
+// otherwise read little bit about scss (optional)
+
+.title-font {
+  font-family: "Playfair Display", serif;
+}
+body {
+  @apply bg-slate-950 text-slate-300
+}
